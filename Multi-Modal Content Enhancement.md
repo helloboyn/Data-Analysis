@@ -1,4 +1,26 @@
-Okay, here are the deliverables based on your request, keeping the constraints in mind.
+### Multi-Modal Content Enhancement
+
+Task: Create a service that generates supporting visuals and key points for LinkedIn articles.
+
+Specific Requirements:
+
+1. Use managed AI services for both text and image generation
+2. Implement a pipeline that:
+  * Analyzes an article draft
+  * Extracts 3-5 key points suitable for visual highlighting
+  * Generates image prompts aligned with the content
+  * Creates supporting visuals using an image generation API
+3. Ensure visual consistency with professional healthcare aesthetic
+4. Include text overlay options for key statistics or quotes
+
+Deliverables:
+
+* Working service that generates supporting content elements
+* Documentation of the extraction and generation approach
+* Sample outputs for a provided article
+* Brief explanation of how this enhances engagement potential
+
+Evaluation Focus: Multi-modal AI integration, content enhancement, visual communication
 
 ---
 
