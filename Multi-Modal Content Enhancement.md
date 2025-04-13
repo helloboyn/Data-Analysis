@@ -6,10 +6,6 @@ Okay, here are the deliverables based on your request, keeping the constraints i
 
 Since a fully working service with API calls exceeds 25 lines, this code *simulates* the core logic and data flow, demonstrating the structure.
 
-**GitHub Repository:**
-
-You can create a new public GitHub repository (e.g., `linkedin-enhancer-simulation`) and place the following `enhancer.py` file in it.
-
 **`enhancer.py` (Under 25 Lines):**
 
 ```python
