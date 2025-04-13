@@ -115,7 +115,7 @@ This submission provides the requested deliverables within the specified constra
 
 ---
 
-### 1. GitHub Repository & Code (Simulated)
+### 2. GitHub Repository & Code (Simulated)
 
 Since a fully working service with API calls exceeds 25 lines, this code *simulates* the core logic and data flow, demonstrating the structure.
 
