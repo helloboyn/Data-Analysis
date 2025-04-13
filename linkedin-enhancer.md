@@ -21,8 +21,9 @@ Deliverables:
 * Sample outputs for a provided article
 * Brief explanation of how this enhances engagement potential
 
-Evaluation Focus: Multi-modal AI integration, content enhancement, visual communication
+Evaluation Focus: Multi-modal AI integration, content enhancement, visual communication.
 
+---
 ### Solution
 
 Okay, acknowledging the strict 25-line limit means the code *cannot* implement the full service with live AI calls and image processing. It will simulate the core logic and data flow.
