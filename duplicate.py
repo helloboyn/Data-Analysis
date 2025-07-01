@@ -12,21 +12,21 @@ def clean_text(text):
     return text
 
 # File paths
-source_path = 'train.hin_Deva'
-target_path = 'train.ben_Beng'
+source_path = 'source_path.txt'
+target_path = 'source_path.txt'
 
 # Read lines
 with open(source_path, 'r', encoding='utf-8') as f:
-    hindi_lines = [clean_text(line.strip()) for line in f]
+    source_lines = [clean_text(line.strip()) for line in f]
 
 with open(target_path, 'r', encoding='utf-8') as f:
-    bengali_lines = [clean_text(line.strip()) for line in f]
+    target_lines = [clean_text(line.strip()) for line in f]
 
 # Check alignment
-assert len(hindi_lines) == len(bengali_lines), "❌ Files are not aligned!"
+assert len(source_lines) == len(target_lines), "❌ Files are not aligned!"
 
 # Create DataFrame
-df = pd.DataFrame({'Hindi': hindi_lines, 'Bengali': bengali_lines})
+df = pd.DataFrame({'Source': source_lines, 'Target': target_lines})
 
 # Excel row limit
 max_rows = 1000000
@@ -40,7 +40,7 @@ for i in tqdm(range(0, len(df), max_rows), desc="💾 Saving Excel parts", unit=
     df_part = df_part.applymap(clean_text)
 
     # Save to Excel
-    df_part.to_excel(f'bitext_hindi_bengali_part{i//max_rows + 1}.xlsx', index=False)
+    df_part.to_excel(f'un-dupli-bitext-part{i//max_rows + 1}.xlsx', index=False)
 
 print("✅ All Excel files saved successfully.")
 
